@@ -141,13 +141,18 @@ body {
   left: -25px;
 }
 p.logo {
-  width: 390px;
+  width: 435px;
   font-size: 110px;
   margin: auto;
   color: #141414;
   line-height: 1;
   padding-bottom: 30px;
   overflow: hidden;
+}
+p.logo sup {
+  font-size: 12px;
+  float: right;
+  margin-top: 20px;
 }
 p.logo span {
   color: #95979A;

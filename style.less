@@ -13,8 +13,8 @@
 @wBull : 80px;
 @hBull : @wBull;
 
-@wRec : 130px;
-@hRec : 30px;
+@wRec : 110px;
+@hRec : 50px;
 @borderRec : 30px;
 
 @wMiddle:100px;
@@ -81,26 +81,26 @@
 	.rad(500px);
 }
 .green-rec{
-	left: @hRec;
-	top: @wBull;
+	left: @hRec - 10px;
+	top: @wBull - 10px;
 	.rotate(45deg);
 	border-color: @green;
 }
 .blue-rec{
-	left: @hRec;
-	bottom: @wBull;
+	left: @hRec - 10px;
+	bottom: @wBull - 10px;
 	.rotate(-45deg);
 	border-color: @blue;
 }
 .red-rec{
-	right: @hRec;
-	bottom: @wBull;
+	right:(@hRec - 10px);
+	bottom: (@wBull - 10px);
 	.rotate(45deg);
 	border-color: @red;
 }
 .orange-rec{
-	right: @hRec;
-	top: @wBull;
+	right: @hRec - 10px;
+	top: @wBull - 10px;
 	.rotate(-45deg);
 	border-color: @orange;
 }
@@ -108,10 +108,11 @@
 //****************** Middle
 .middle{
 	background-color: @bgLogo;
-	width: @wMiddle;
-	height: @hMiddle;
+	width: 112px;
+	left: 94px;
+	height: 112px;
+	top: 94px;
 	.rotate(45deg);
-	display: none!important;
 }
 
 

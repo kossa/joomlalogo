@@ -41,40 +41,40 @@
 .rectangle {
   border-width: 30px;
   border-style: solid;
-  width: 130px;
-  height: 30px;
+  width: 110px;
+  height: 50px;
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
   -o-border-radius: 500px;
   border-radius: 500px;
 }
 .green-rec {
-  left: 30px;
-  top: 80px;
+  left: 40px;
+  top: 70px;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   border-color: #7ac142;
 }
 .blue-rec {
-  left: 30px;
-  bottom: 80px;
+  left: 40px;
+  bottom: 70px;
   transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   border-color: #4f91cd;
 }
 .red-rec {
-  right: 30px;
-  bottom: 80px;
+  right: 40px;
+  bottom: 70px;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   border-color: #ef3e35;
 }
 .orange-rec {
-  right: 30px;
-  top: 80px;
+  right: 40px;
+  top: 70px;
   transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -82,10 +82,11 @@
 }
 .middle {
   background-color: #f8f8f8;
-  width: 100px;
-  height: 100px;
+  width: 112px;
+  left: 94px;
+  height: 112px;
+  top: 94px;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  display: none!important;
 }

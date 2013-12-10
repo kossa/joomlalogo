@@ -1,24 +1,26 @@
 
 //****************** Color
-@red : #EF3E35;
-@blue : #4F91CD;
-@orange : #F9AE3F;
-@green : #7AC142;
+@red: #EF3E35;
+@blue: #4F91CD;
+@orange: #F9AE3F;
+@green: #7AC142;
 @bgLogo:  #f8f8f8;
 
 //****************** Dimension
 @wlogo: 300px;
 @hlogo: @wlogo;
 
-@wBull : 80px;
-@hBull : @wBull;
+@wBull: 80px;
+@hBull: @wBull;
 
-@wRec : 110px;
-@hRec : 50px;
-@borderRec : 30px;
+@wRec: 110px;
+@hRec: 50px;
+@borderRec: 30px;
 
-@wMiddle:100px;
-@hMiddle:@wMiddle;
+@wMiddle: 112px;
+@hMiddle: @wMiddle;
+@SmallMiddleWidth: @wMiddle - @borderRec;
+@SmallMiddleHeight: @borderRec;
 //****************** Mixin
 .rad(@radius){
   -moz-border-radius: @radius;
@@ -38,6 +40,7 @@
 	border:1px solid #ddd;
 	background-color: @bgLogo;
 	margin: 50px auto;
+	box-sizing: border-box;
 	
 	span{
 		display: inline-block;
@@ -107,12 +110,53 @@
 
 //****************** Middle
 .middle{
+	position: absolute;
 	background-color: @bgLogo;
-	width: 112px;
-	left: 94px;
-	height: 112px;
-	top: 94px;
 	.rotate(45deg);
+	top: 93px;
+	left: 93px;
+	width: @wMiddle;
+	height: @hMiddle;
+
+	span{
+		position: absolute;
+	}
+	.green-mid{
+		background-color: @green;
+		width: @SmallMiddleWidth;
+		height: @SmallMiddleHeight;
+		z-index: 10;
+		top: 81px;
+		left: -1px;
+	}
+	.blue-mid{
+		background-color: @blue;
+		width: @SmallMiddleWidth;
+		height: @SmallMiddleHeight;
+		z-index: 15;
+		.rotate(90deg);
+		bottom: 25px;
+		right: -25px;
+	}
+	.red-mid{
+		background-color: @red;
+		width: @SmallMiddleWidth;
+		height: @SmallMiddleHeight;
+		z-index: 20;
+		top: 1px;
+		left: 31px;	
+	}
+	.orange-mid{
+		background-color: @orange;
+		width: @SmallMiddleWidth;
+		height: @SmallMiddleHeight;
+		z-index: 5;
+		.rotate(90deg);
+		top: 25px;
+		left: -25px;
+	}
+
+
 }
 
 

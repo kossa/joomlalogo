@@ -1,0 +1,44 @@
+
+//****************** Color
+@red : #EF3E35;
+@blue : #4F91CD;
+@orange : #F9AE3F;
+@green : #7AC142;
+
+//****************** Dimension
+@wBull : 50px;
+@hBull : 50px;
+
+@wRec : 130px;
+@hRec : 30px;
+
+//****************** Mixin
+.rad(@rad){
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.rotate(@rt){
+	transform:rotate(@rt); 
+	-ms-transform:rotate(@rt); 
+	-webkit-transform:rotate(@rt);	
+}
+
+
+.joomla-logo{position: relative; width: 500px; height: 500px; border:1px solid #ddd; background-color: #f8f8f8; margin: 50px auto; }
+
+.joomla-logo span{display: inline-block; position: absolute;}
+
+.circle{width: 50px;height: 50px;border-radius: 50px;-moz-border-radius: 50px;-o-border-radius: 50px;-webkit-border-radius: 50px;ms-border-radius: 50px;}
+.rectangler{border-width: 30px; border-style:  solid;width: 130px;height: 30px;border-radius: 50px;-moz-border-radius: 50px;-o-border-radius: 50px;-webkit-border-radius: 50px;ms-border-radius: 50px;}
+
+.g-c{top: 50px; left: 130px;background-color: #7AC142;}
+.b-c{top: 250px;left: 130px;background-color: #4F91CD;}
+.r-c{top: 250px;left: 340px;background-color: @red;}
+.o-c{top: 50px;left: 340px;background-color: #F9AE3F;}
+
+.g-r{border-color:#7AC142;top: 100px;left: 120px;.rotate(45deg)}
+.b-r{border-color: #4F91CD;top: 160px;left: 140px;transform:rotate(-45deg); -ms-transform:rotate(-45deg); -webkit-transform:rotate(-45deg);}
+.r-r{border-color: #4F91CD;top: 160px;left: 140px;transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
+.o-r{}

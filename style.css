@@ -141,18 +141,20 @@ body {
   left: -25px;
 }
 p.logo {
-  width: 435px;
+  width: 385px;
   font-size: 110px;
   margin: auto;
   color: #141414;
   line-height: 1;
   padding-bottom: 30px;
-  overflow: hidden;
+  position: relative;
 }
 p.logo sup {
   font-size: 12px;
-  float: right;
   margin-top: 20px;
+  position: absolute;
+  top: 0;
+  right: -30px;
 }
 p.logo span {
   color: #95979A;

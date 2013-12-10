@@ -1,16 +1,21 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+/****************** Color */
+/****************** Dimension */
+/****************** Mixin */
 .joomla-logo {
   position: relative;
   width: 300px;
   height: 300px;
-  border: 1px solid #ddd;
-  background-color: #f8f8f8;
-  margin: 50px auto;
+  margin: 50px auto 0;
   box-sizing: border-box;
 }
 .joomla-logo span {
   display: inline-block;
   position: absolute;
 }
+/******************  Bulls */
 .bull {
   width: 80px;
   height: 80px;
@@ -39,6 +44,7 @@
   top: 0;
   background-color: #f9ae3f;
 }
+/****************** rectangle */
 .rectangle {
   border-width: 30px;
   border-style: solid;
@@ -81,55 +87,70 @@
   -webkit-transform: rotate(-45deg);
   border-color: #f9ae3f;
 }
+/****************** Middle */
 .middle {
   position: absolute;
   background-color: #f8f8f8;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  top: 93px;
-  left: 93px;
-  width: 112px;
-  height: 112px;
+  top: 95px;
+  left: 95px;
+  width: 110px;
+  height: 110px;
 }
 .middle span {
   position: absolute;
 }
 .middle .green-mid {
   background-color: #7ac142;
-  width: 82px;
+  width: 80px;
   height: 30px;
   z-index: 10;
-  top: 81px;
+  top: 80px;
   left: -1px;
 }
 .middle .blue-mid {
   background-color: #4f91cd;
-  width: 82px;
+  width: 80px;
   height: 30px;
   z-index: 15;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  bottom: 25px;
+  bottom: 24px;
   right: -25px;
 }
 .middle .red-mid {
   background-color: #ef3e35;
-  width: 82px;
+  width: 80px;
   height: 30px;
   z-index: 20;
-  top: 1px;
+  top: 0px;
   left: 31px;
 }
 .middle .orange-mid {
   background-color: #f9ae3f;
-  width: 82px;
+  width: 80px;
   height: 30px;
   z-index: 5;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  top: 25px;
+  top: 24px;
   left: -25px;
+}
+p.logo {
+  width: 390px;
+  font-size: 110px;
+  margin: auto;
+  color: #141414;
+  line-height: 1;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+p.logo span {
+  color: #95979A;
+  font-size: 40px;
+  float: right;
 }

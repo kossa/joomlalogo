@@ -1,12 +1,15 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
 
-//****************** Color
+/****************** Color */
 @red: #EF3E35;
 @blue: #4F91CD;
 @orange: #F9AE3F;
 @green: #7AC142;
 @bgLogo:  #f8f8f8;
 
-//****************** Dimension
+/****************** Dimension */
 @wlogo: 300px;
 @hlogo: @wlogo;
 
@@ -17,11 +20,12 @@
 @hRec: 50px;
 @borderRec: 30px;
 
-@wMiddle: 112px;
+@posMiddle: 95px;
+@wMiddle: 110px;
 @hMiddle: @wMiddle;
 @SmallMiddleWidth: @wMiddle - @borderRec;
 @SmallMiddleHeight: @borderRec;
-//****************** Mixin
+/****************** Mixin */
 .rad(@radius){
   -moz-border-radius: @radius;
   -webkit-border-radius: @radius;
@@ -37,9 +41,9 @@
 	position: relative;
 	width: @wlogo;
 	height: @hlogo;
-	border:1px solid #ddd;
-	background-color: @bgLogo;
-	margin: 50px auto;
+	// border:1px solid #ddd;
+	// background-color: @bgLogo;
+	margin: 50px auto 0;
 	box-sizing: border-box;
 	
 	span{
@@ -48,7 +52,7 @@
 	}
 }
 
-//******************  Bulls
+/******************  Bulls */
 .bull{
 	width: @wBull;
 	height: @hBull;
@@ -75,7 +79,7 @@
 	background-color: @orange;
 }
 
-//****************** rectangle
+/****************** rectangle */
 .rectangle{
 	border-width: @borderRec;
 	border-style:  solid;
@@ -108,13 +112,13 @@
 	border-color: @orange;
 }
 
-//****************** Middle
+/****************** Middle */
 .middle{
 	position: absolute;
 	background-color: @bgLogo;
 	.rotate(45deg);
-	top: 93px;
-	left: 93px;
+	top: @posMiddle;
+	left: @posMiddle;
 	width: @wMiddle;
 	height: @hMiddle;
 
@@ -126,7 +130,7 @@
 		width: @SmallMiddleWidth;
 		height: @SmallMiddleHeight;
 		z-index: 10;
-		top: 81px;
+		top: 80px;
 		left: -1px;
 	}
 	.blue-mid{
@@ -135,7 +139,7 @@
 		height: @SmallMiddleHeight;
 		z-index: 15;
 		.rotate(90deg);
-		bottom: 25px;
+		bottom: 24px;
 		right: -25px;
 	}
 	.red-mid{
@@ -143,7 +147,7 @@
 		width: @SmallMiddleWidth;
 		height: @SmallMiddleHeight;
 		z-index: 20;
-		top: 1px;
+		top: 0px;
 		left: 31px;	
 	}
 	.orange-mid{
@@ -152,11 +156,25 @@
 		height: @SmallMiddleHeight;
 		z-index: 5;
 		.rotate(90deg);
-		top: 25px;
+		top: 24px;
 		left: -25px;
 	}
+}
 
+p.logo{
+	width: @wlogo + 90;
+	font-size: 110px;
+	margin: auto;
+	color: #141414;
+	line-height: 1;
+	padding-bottom: 30px;
+	overflow: hidden;
 
+	span{
+		color: #95979A;
+		font-size: 40px;
+		float: right;
+	}
 }
 
 

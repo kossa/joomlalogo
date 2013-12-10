@@ -1,7 +1,7 @@
 .joomla-logo {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
   margin: 50px auto;
@@ -10,67 +10,82 @@
   display: inline-block;
   position: absolute;
 }
-.circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -o-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  ms-border-radius: 50px;
+.bull {
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -o-border-radius: 80px;
+  border-radius: 80px;
 }
-.rectangler {
+.green-bull {
+  left: 0;
+  top: 0;
+  background-color: #7ac142;
+}
+.blue-bull {
+  left: 0;
+  bottom: 0;
+  background-color: #4f91cd;
+}
+.red-bull {
+  right: 0;
+  bottom: 0;
+  background-color: #ef3e35;
+}
+.orange-bull {
+  right: 0;
+  top: 0;
+  background-color: #f9ae3f;
+}
+.rectangle {
   border-width: 30px;
   border-style: solid;
   width: 130px;
   height: 30px;
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -o-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  ms-border-radius: 50px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
 }
-.g-c {
-  top: 50px;
-  left: 130px;
-  background-color: #7AC142;
-}
-.b-c {
-  top: 250px;
-  left: 130px;
-  background-color: #4F91CD;
-}
-.r-c {
-  top: 250px;
-  left: 340px;
-  background-color: #ef3e35;
-}
-.o-c {
-  top: 50px;
-  left: 340px;
-  background-color: #F9AE3F;
-}
-.g-r {
-  border-color: #7AC142;
-  top: 100px;
-  left: 120px;
+.green-rec {
+  left: 30px;
+  top: 80px;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  border-color: #7ac142;
 }
-.b-r {
-  border-color: #4F91CD;
-  top: 160px;
-  left: 140px;
+.blue-rec {
+  left: 30px;
+  bottom: 80px;
   transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  border-color: #4f91cd;
 }
-.r-r {
-  border-color: #4F91CD;
-  top: 160px;
-  left: 140px;
+.red-rec {
+  right: 30px;
+  bottom: 80px;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  border-color: #ef3e35;
+}
+.orange-rec {
+  right: 30px;
+  top: 80px;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border-color: #f9ae3f;
+}
+.middle {
+  background-color: #f8f8f8;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  display: none!important;
 }

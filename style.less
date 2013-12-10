@@ -4,41 +4,114 @@
 @blue : #4F91CD;
 @orange : #F9AE3F;
 @green : #7AC142;
+@bgLogo:  #f8f8f8;
 
 //****************** Dimension
-@wBull : 50px;
-@hBull : 50px;
+@wlogo: 300px;
+@hlogo: @wlogo;
+
+@wBull : 80px;
+@hBull : @wBull;
 
 @wRec : 130px;
 @hRec : 30px;
+@borderRec : 30px;
 
+@wMiddle:100px;
+@hMiddle:@wMiddle;
 //****************** Mixin
-.rad(@rad){
+.rad(@radius){
   -moz-border-radius: @radius;
   -webkit-border-radius: @radius;
+  -o-border-radius: @radius;
   border-radius: @radius;
 }
-
 .rotate(@rt){
-	transform:rotate(@rt); 
-	-ms-transform:rotate(@rt); 
+	transform:rotate(@rt);
+	-ms-transform:rotate(@rt);
 	-webkit-transform:rotate(@rt);	
+}
+.joomla-logo{
+	position: relative;
+	width: @wlogo;
+	height: @hlogo;
+	border:1px solid #ddd;
+	background-color: @bgLogo;
+	margin: 50px auto;
+	
+	span{
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+//******************  Bulls
+.bull{
+	width: @wBull;
+	height: @hBull;
+	.rad(@wBull);
+}
+.green-bull{
+	left: 0;
+	top: 0;
+	background-color: @green;
+}
+.blue-bull{
+	left: 0;
+	bottom: 0;
+	background-color: @blue;
+}
+.red-bull{
+	right: 0;
+	bottom: 0;
+	background-color: @red;
+}
+.orange-bull{
+	right: 0;
+	top: 0;
+	background-color: @orange;
+}
+
+//****************** rectangle
+.rectangle{
+	border-width: @borderRec;
+	border-style:  solid;
+	width: @wRec;
+	height: @hRec;
+	.rad(500px);
+}
+.green-rec{
+	left: @hRec;
+	top: @wBull;
+	.rotate(45deg);
+	border-color: @green;
+}
+.blue-rec{
+	left: @hRec;
+	bottom: @wBull;
+	.rotate(-45deg);
+	border-color: @blue;
+}
+.red-rec{
+	right: @hRec;
+	bottom: @wBull;
+	.rotate(45deg);
+	border-color: @red;
+}
+.orange-rec{
+	right: @hRec;
+	top: @wBull;
+	.rotate(-45deg);
+	border-color: @orange;
+}
+
+//****************** Middle
+.middle{
+	background-color: @bgLogo;
+	width: @wMiddle;
+	height: @hMiddle;
+	.rotate(45deg);
+	display: none!important;
 }
 
 
-.joomla-logo{position: relative; width: 500px; height: 500px; border:1px solid #ddd; background-color: #f8f8f8; margin: 50px auto; }
-
-.joomla-logo span{display: inline-block; position: absolute;}
-
-.circle{width: 50px;height: 50px;border-radius: 50px;-moz-border-radius: 50px;-o-border-radius: 50px;-webkit-border-radius: 50px;ms-border-radius: 50px;}
-.rectangler{border-width: 30px; border-style:  solid;width: 130px;height: 30px;border-radius: 50px;-moz-border-radius: 50px;-o-border-radius: 50px;-webkit-border-radius: 50px;ms-border-radius: 50px;}
-
-.g-c{top: 50px; left: 130px;background-color: #7AC142;}
-.b-c{top: 250px;left: 130px;background-color: #4F91CD;}
-.r-c{top: 250px;left: 340px;background-color: @red;}
-.o-c{top: 50px;left: 340px;background-color: #F9AE3F;}
-
-.g-r{border-color:#7AC142;top: 100px;left: 120px;.rotate(45deg)}
-.b-r{border-color: #4F91CD;top: 160px;left: 140px;transform:rotate(-45deg); -ms-transform:rotate(-45deg); -webkit-transform:rotate(-45deg);}
-.r-r{border-color: #4F91CD;top: 160px;left: 140px;transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
-.o-r{}
